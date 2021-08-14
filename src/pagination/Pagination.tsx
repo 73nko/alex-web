@@ -10,7 +10,7 @@ export type IPaginationProps = {
 };
 
 const Pagination = (props: IPaginationProps) => (
-  <div className="text-sm flex justify-between">
+  <div className="">
     {props.previous && (
       <div>
         <Link href={convertUrlToLinkHref(props.previous)} as={props.previous}>
@@ -20,7 +20,7 @@ const Pagination = (props: IPaginationProps) => (
     )}
 
     {props.next && (
-      <div className="text-right ml-auto">
+      <div className="">
         <Link href={convertUrlToLinkHref(props.next)} as={props.next}>
           <a>Older Posts →</a>
         </Link>
