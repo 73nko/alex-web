@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 import { Navbar } from '../navigation/Navbar';
 import { Config } from '../utils/Config';
+import { ThemeToggler } from '../utils/ThemeToggler';
 
 type IMainProps = {
   meta: ReactNode;
@@ -16,6 +17,7 @@ const Main = (props: IMainProps) => (
 
     <div className="">
       <div className="">
+        <ThemeToggler />
         <div className="">
           <div className="">{Config.title}</div>
           <div className="">{Config.description}</div>
